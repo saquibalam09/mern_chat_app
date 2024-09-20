@@ -18,7 +18,7 @@ export const SocketContextProvider = ({ children }) => {
     if (authUser) {
       //   console.log(authUser);
 
-      const socket = io("http://localhost:5000", {
+      const socket = io("https://chat-app-rjho.onrender.com", {
         query: {
           userId: authUser._id,
         },
